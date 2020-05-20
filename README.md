@@ -20,5 +20,10 @@ npm run build
 npm run lint
 ```
 
+### Live Url
+[Restaurant Manger App](https://github.com/rehamwael/restaurant-reservations-VueJS)
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
