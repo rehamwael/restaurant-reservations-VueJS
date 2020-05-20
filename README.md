@@ -1,5 +1,8 @@
 # restaurant-app
 
+### Live Url
+[Restaurant Manger App](https://distracted-banach-f50da3.netlify.app/)
+
 ## Project setup
 ```
 npm install
@@ -20,8 +23,6 @@ npm run build
 npm run lint
 ```
 
-### Live Url
-[Restaurant Manger App](https://github.com/rehamwael/restaurant-reservations-VueJS)
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
