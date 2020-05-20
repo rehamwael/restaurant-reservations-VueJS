@@ -152,7 +152,7 @@ export default {
         if(!this.errors.length){
           let tableIndex = Xrestaurant.methods.tableOrder(this.NumberOfPeople);
           let table = this.$root.$children[0].$children[1].$children[tableIndex]; 
-          let isAvailable = await table.untilAvailable();
+          let isAvailable = await table.untilAvailable(table);
             if(isAvailable){
                 this.tables[tableIndex].people=this.NumberOfPeople;
                 this.tables[tableIndex].duration=this.DurationOfStay;

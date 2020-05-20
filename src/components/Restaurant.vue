@@ -22,9 +22,18 @@ export default {
     },
     methods: {
         tableOrder: function(partySize){
-            let tablesCapacities = allTables.map(function(a) {return a.capacity;});
-            const output = tablesCapacities.reduce((prev, curr) => Math.abs(curr - partySize) < Math.abs(prev - partySize) ? curr : prev);
-            return output;
+            let index,current;
+            let maxCapacity = Infinity;
+            for(let i = 0; i < allTables.length; i++) {
+                if(allTables[i].is_available === true && allTables[i].capacity >= partySize) {
+                    current = allTables[i].capacity;
+                    if(current < maxCapacity) {
+                        maxCapacity = current;
+                        index = i;
+                    }
+                }
+            }
+           return index
         },
     }
 }
